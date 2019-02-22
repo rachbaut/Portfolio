@@ -11,27 +11,125 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Montserrat|Roboto+Mono" rel="stylesheet">
 </head>
 
 <body>
-    <div class="top-content">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="jumbotron text-center">
+    <!--HTML FOR ABOUT PORTION OF WEBPAGE-->
+    <div class="row aboutcontent">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand"><i class="fas fa-globe-americas fa-2x"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row nametext text-center">
+                <div class="col-md-12">
                     <h1 class="display-4">Rachel Bautista</h1>
-                    <p class="lead">Full Stack Developer</p>
-                    <hr class="my-4">
-                    <p>Welcome to Portfolio! I would like to introduce below all my projects new and old.</p>
+                    <hr>
+                    <p class="lead">Front End Developer</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <a href="#" target="_blank">Resume</a> | <a href="#" target="_blank">CV</a>
+                        
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="row">
-
-
+    <!--HTML FOR THE PROJECT PORTION OF WEBPAGE-->
+    <div class="row projectcontent">
+        <div class="container">
+            <div class="row projecttext text-center">
+                <div class="col-md-12">
+                    <h1 class="display-5">Projects</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crystal Collector</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Giphy</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Friend Finder</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                    <div class="col-md-12">
+                        <p class="gitinfo">More of my work located here: <a href="https://github.com/rachbaut?tab=repositories" target="_blank">GitHub</a> </p>
+                    </div>
+                </div>
+        </div>
     </div>
+
+    <!--HTML FOR SKILLS PART OF THE WEBPAGE-->
+    <div class="row skillscontent">
+        <div class="col-md-12">
+                <div class="row skillstext text-center">
+                        <div class="col-md-12">
+                            <h1 class="display-5">Skills</h1>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+
+    <!--HTML FOR THE CONTACT PART OF THE WEBPAGE-->
+    <div class="row contactcontent">
+            <div class="col-md-12">
+                    <div class="row contacttext text-center">
+                            <div class="col-md-12">
+                                <h1 class="display-5">Contact</h1>
+                            </div>
+                        </div>
+    
+            </div>
+        </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 </body>
