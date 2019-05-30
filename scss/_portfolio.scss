@@ -58,3 +58,28 @@
     }
   }
 }
+
+
+.card-img-top {
+  height: 165px;
+  width: 100%;
+  background-size: cover;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .card-img-top {
+    display: none;
+  }
+
+  .card {
+    padding: 25px;
+    background-color: rgb(129, 32, 7);
+    color: white;
+  }
+}

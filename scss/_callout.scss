@@ -1,14 +1,35 @@
 // Callout
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/purple.jpg');
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/sand.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   h2 {
+    font-family: 'Sacramento', cursive;
     font-size: 3.5rem;
     font-weight: 700;
     display: block;
     max-width: 30rem;
   }
 }
+
+.contactheader {
+  padding-bottom: 5px;
+  font-size: 2.8rem;
+  color: black;
+}
+
+.emailbutton {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+}
+
+.emailbutton:hover {
+  background-color: black;
+  color: white;
+}
+
+
+

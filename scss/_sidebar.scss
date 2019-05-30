@@ -2,7 +2,7 @@
 
 #sidebar-wrapper {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   right: 0;
   width: 250px;
   height: 100%;
@@ -12,7 +12,7 @@
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: $primary;
+  background: rgba(0, 0, 0, .5);
   border-left: 1px solid fade-out($white, 0.9);
 }
 
@@ -25,8 +25,8 @@
   list-style: none;
 }
 
-.sidebar-nav li {
-}
+// .sidebar-nav li {
+// }
 
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
@@ -98,8 +98,19 @@
   &:hover {
     background: $gray-800;
   }
-  &.active {
-    // background-color: $white;
-    // color: $gray-900;
+  // &.active {
+  //   // background-color: $white;
+  //   // color: $gray-900;
+  // }
+}
+
+.sidebar_top {
+  font-family: 'Major Mono Display', monospace;
+}
+
+@media only screen and (max-width: 767px) {
+  #sidebar-wrapper {
+    background-color: black;
+    z-index: 3;
   }
 }

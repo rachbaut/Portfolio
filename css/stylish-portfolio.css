@@ -14,10 +14,6 @@ body {
   font-family: 'Source Sans Pro';
 }
 
-.btn-xl {
-  padding: 1.25rem 2.5rem;
-}
-
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -133,17 +129,35 @@ header .overlay {
 }
 
 .display-3 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Major Mono Display', monospace;
 }
 
 .signature {
   font-size: 1rem;
 }
 
+.hello {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.hello::first-line {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 2.5rem;
+}
+
+.endSign {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 2.5rem;
+  text-align: right;
+  padding-right: 150px;
+  margin-top: -35px;
+}
+
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   right: 0;
   width: 250px;
   height: 100%;
@@ -151,7 +165,7 @@ header .overlay {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #f1ab9a;
+  background: rgba(0, 0, 0, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -229,6 +243,17 @@ header .overlay {
   background: #343a40;
 }
 
+.sidebar_top {
+  font-family: 'Major Mono Display', monospace;
+}
+
+@media only screen and (max-width: 767px) {
+  #sidebar-wrapper {
+    background-color: black;
+    z-index: 3;
+  }
+}
+
 .service-icon {
   background-color: #fff;
   color: #f1ab9a;
@@ -239,22 +264,45 @@ header .overlay {
   font-size: 2.25rem;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.resumeheader {
+  color: black;
 }
 
 .callout {
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/purple.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/purple.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/sand.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/sand.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .callout h2 {
+  font-family: 'Sacramento', cursive;
   font-size: 3.5rem;
   font-weight: 700;
   display: block;
   max-width: 30rem;
+}
+
+.contactheader {
+  padding-bottom: 5px;
+  font-size: 2.8rem;
+  color: black;
+}
+
+.emailbutton {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+}
+
+.emailbutton:hover {
+  background-color: black;
+  color: white;
 }
 
 .portfolio-item {
@@ -323,6 +371,27 @@ header .overlay {
     background-color: rgba(241, 171, 154, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+  }
+}
+
+.card-img-top {
+  height: 165px;
+  width: 100%;
+  background-size: cover;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-img-top {
+    display: none;
+  }
+  .card {
+    padding: 25px;
+    background-color: #812007;
+    color: white;
   }
 }
 
