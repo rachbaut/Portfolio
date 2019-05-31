@@ -393,6 +393,9 @@ header .overlay {
     background-color: #812007;
     color: white;
   }
+  .descrtext {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
 }
 
 footer.footer {
