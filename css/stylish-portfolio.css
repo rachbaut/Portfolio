@@ -139,6 +139,7 @@ header .overlay {
 .hello {
   text-align: left;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .hello::first-line {
@@ -382,6 +383,15 @@ header .overlay {
 
 .card-title {
   font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.card-title:hover {
+  color: #812007;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -392,6 +402,12 @@ header .overlay {
     padding: 25px;
     background-color: #812007;
     color: white;
+  }
+  .card-title {
+    color: white;
+  }
+  .card-title:hover {
+    color: black;
   }
   .descrtext {
     color: rgba(255, 255, 255, 0.5) !important;

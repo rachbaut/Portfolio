@@ -68,7 +68,18 @@
 
 .card-title {
   font-family: 'Montserrat', sans-serif;
+  color: black;
 }
+
+.card-title:hover {
+  color: rgb(129, 32, 7);
+}
+
+ a:hover {
+  text-decoration: none;
+}
+
+
 
 
 
@@ -81,6 +92,14 @@
     padding: 25px;
     background-color: rgb(129, 32, 7);
     color: white;
+  }
+
+  .card-title {
+    color: white;
+  }
+
+  .card-title:hover {
+    color: black;
   }
 
   .descrtext {
