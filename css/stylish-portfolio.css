@@ -130,6 +130,7 @@ header .overlay {
 
 .display-3 {
   font-family: 'Major Mono Display', monospace;
+  font-size: 5vw;
 }
 
 .signature {
@@ -488,3 +489,4 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #f7d7bc !important;
 }
+
